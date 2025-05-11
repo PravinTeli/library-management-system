@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+Library Management System
+This project is a web-based Library Management System built for Lab 3 using React, Vite, and Tailwind CSS. It includes features such as user login, registration, book search, and book details viewing.
+Setup Instructions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clone the Repository:
+git clone https://github.com/PravinTeli/library-management-system.git
+cd library-management-system
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install Dependencies:
+npm install
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Run the Development Server:
+npm run dev -- --port 3000
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Access the Application:Open http://localhost:3000 in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Features
+
+Home Page: Displays a welcome message.
+Login Page: Allows users to log in with email and password validation.
+Register Page: Allows users to register with password strength checking.
+Search Page: Enables searching books by title with mock data.
+Book Details Page: Displays details of a selected book.
+
+Screenshots
+
+Home: screenshots/home.png
+Login: screenshots/login.png
+Register: screenshots/register.png
+Search: screenshots/search.png
+Book Details: screenshots/book-details.png
+
